@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
 class TuneModel {
@@ -11,5 +12,11 @@ class TuneModel {
 
   void playSound() {
     // Play sound
+    try {
+      final player = AudioPlayer();
+      player.play(AssetSource(tune));
+    } catch (e) {
+      e.toString();
+    }
   }
 }
