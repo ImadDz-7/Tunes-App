@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tunes_app/views/tunes_view.dart';
 
 void main() {
   runApp(const TunesApp());
@@ -9,6 +10,9 @@ class TunesApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp();
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: TunesView(),
+    );
   }
 }
