@@ -17,9 +17,7 @@ class TunesView extends StatelessWidget {
       body: Column(
         children: tunes
             .map(
-              (tune) => TuneItem(
-                tune: tune,
-              ),
+              (tune) => TuneItem(tune: tune),
             )
             .toList(),
       ),
