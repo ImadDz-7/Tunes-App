@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tunes_app/constants.dart';
 
 class TuneItem extends StatelessWidget {
   const TuneItem({super.key});
@@ -7,7 +8,9 @@ class TuneItem extends StatelessWidget {
   Widget build(BuildContext 
   context) {
     return Container(
-      
+      height: 80,
+      width: double.infinity,
+      color: kRed,
     );
   }
 }
