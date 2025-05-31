@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tunes_app/constants.dart';
+import 'package:tunes_app/widgets/tune_item.dart';
 
 class TunesView extends StatelessWidget {
   const TunesView({super.key});
@@ -12,6 +13,11 @@ class TunesView extends StatelessWidget {
         centerTitle: true,
         backgroundColor: kbackground,
       ), 
+      body: Column(
+        children: [
+          TuneItem(),
+        ],
+      ),
     );
   }
 }
